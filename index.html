@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <title>HTML5 Canvas finger lottery ticket eraser</title>
+    <meta name="description" content="Experiment that demonstrates how lottery hologram could be erased with a finger movement on iOS mobile device." />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Manakor Labs, http://manakor.org" />
+    <!-- Frontend engineer: Nik Sumeiko, http://manakor.org -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <!-- Visible for mobile devices -->
+    <div class="mobile-wrap">
+        <h1 id="t" class="title">Have you won the lottery?</h1>
+        <h5 class="subtitle">Use your finger to erase the hologram...</h5>
+        
+        <div class="wrapper">
+            <figure id="r" class="lottery-result"><span>Loading...</span></figure>
+            <canvas id="c" class="lottery-ticket" width="300" height="250"></canvas>
+        </div>
+        
+        <a id="a" href="#" class="repeat-link" title="">Try again?</a>
+        <hr />
+    </div>
+    
+    <!-- Visible for non mobile devices -->
+    <div class="non-mobile-wrap">
+        <p>This experiment is only for mobile devices</p>
+        <span>Please open this page on your mobile device</span>
+        <hr />
+    </div>
+        
+    <cite class="author">
+        <a href="https://github.com/manakor/html5-canvas-finger-lottery-ticket-eraser" title="HTML5 &lt;canvas&gt; experiment" />HTML5 &lt;canvas&gt; experiment</a>
+        <br />
+        Nik Sumeiko, <a href="http://manakor.org" title="Nik Sumeiko" />http://manakor.org</a>
+    </cite>
+    <cite class="author wallpaper">
+        Chromaticity wallpaper by <a href="http://lukeroberts.us/2011/12/chromaticity-wallpaper/" title="Luke Roberts" target="_blank" />Luke Roberts</a>
+    </cite>
+    
+    <script src="js/main.js?v=09022013"></script>
+</body>
+</html>
